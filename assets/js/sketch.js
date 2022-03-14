@@ -32,7 +32,7 @@ function setup() {
   let cnv = createCanvas(windowWidth, windowHeight/2);
   // Assigns a CSS selector class 'small'
   // to the canvas element.
-  cnv.class('banner');
+  cnv.parent('banner');
  
   rectMode(CENTER);
   noStroke();
@@ -42,6 +42,9 @@ function setup() {
 function draw() {
   resetPatchwork();
   background(255);
+ 
+
+
   for (var y = blockSize / 2; y < height; y+=blockSize) {
     for (var x = blockSize / 2; x < width; x+=blockSize) {
       queueNum = shuffleArray([ 0, 1, 2, ]);

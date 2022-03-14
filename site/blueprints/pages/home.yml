@@ -99,10 +99,11 @@ tabs:
         sections:
           logo1:
             type: files
-            fields:
-              logo1:
-                label: Logo 1
-                extends: sections/image 
+            headline: logo 1
+            max: 1
+            template: cover
+            accept: image/png
+            search: true
 
       # center logo
       main2:
@@ -110,21 +111,23 @@ tabs:
         sections:
           logo2:
             type: files
-            fields:
-              logo2:
-                label: Logo 2
-                extends: sections/image 
-
+            headline: logo 2
+            max: 1
+            template: cover
+            accept: image/png
+            search: true
+ 
       # right logo
       sidebar_right2:
         width: 1/3
         sections:
           logo3: 
             type: files
-            fields:
-              logo3 :
-                label: Logo 3
-                extends: sections/image 
+            headline: logo 2
+            max: 1
+            template: cover
+            accept: image/png
+            search: true
 
       # text area supsi
       sidebar_left3:

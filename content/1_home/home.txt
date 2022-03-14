@@ -26,12 +26,12 @@ Mail:
 
 ----
 
-Info1: 
+Info1: info partner 1
 
 ----
 
-Info2: 
+Info2: info partner 2
 
 ----
 
-Info3: 
+Info3: info partner 3

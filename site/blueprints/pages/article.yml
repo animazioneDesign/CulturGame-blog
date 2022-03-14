@@ -38,4 +38,4 @@ columns:
           tags:
             type: tags
           foto:
-            type: files
+            type: f
