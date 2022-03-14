@@ -1,0 +1,162 @@
+
+
+title: Home page
+
+tabs:
+
+  contenuti:
+
+  
+    columns:
+
+  # contenuti tab
+  contenuti:
+    label: Contenuti
+    icon: text
+    columns:
+
+      # main
+      left:
+
+        width: 2/3
+        sections:
+
+          # a list of subpages
+          testo:
+            type: fields
+            fields:
+              Titolo:
+                label: Titolo
+                type: text
+              Sottotitolo:
+                label: Sottotitolo
+                type: text
+              Testo:
+                label: Testo introduttivo
+                type: textarea
+
+
+      # sidebar
+      right:
+        width: 1/3
+        sections:
+
+          # a list of subpages
+          pages:
+            type: pages
+            headline: Subpages
+
+          # # a list of files
+          # files:
+          #   type: files
+          #   headline: Files
+
+  # footer tab
+  footer:
+
+  
+    columns:
+
+      # sidebar left 1
+      sidebar_left:
+        width: 1/3
+        sections:
+          content:
+            type: fields
+            fields:
+              facebook:
+                label: Facebooks
+                icon: facebook
+                type: url 
+
+    # main 1
+      main:
+        width: 1/3
+        sections:
+          instagram:
+            type: fields
+            fields:
+              instagram:
+                label: Instagram
+                icon: instagram
+                type: url
+
+      # sidebar right 1
+      sidebar-right:
+        width: 1/3
+        sections:
+          mail:
+            type: fields
+            fields:
+              mail:
+                label: Email
+                icon: email
+                type: email
+            
+      # left logo
+      sidebar_left2:
+        width: 1/3
+        sections:
+          logo1:
+            type: files
+            fields:
+              logo1:
+                label: Logo 1
+                extends: sections/image 
+
+      # center logo
+      main2:
+        width: 1/3
+        sections:
+          logo2:
+            type: files
+            fields:
+              logo2:
+                label: Logo 2
+                extends: sections/image 
+
+      # right logo
+      sidebar_right2:
+        width: 1/3
+        sections:
+          logo3: 
+            type: files
+            fields:
+              logo3 :
+                label: Logo 3
+                extends: sections/image 
+
+      # text area supsi
+      sidebar_left3:
+        width: 1/3
+        sections:
+          info_supsi:
+            type: fields
+            fields:
+              info1:
+                label: info 1
+                type: textarea
+
+
+      # text area hslu
+      sidebar_right3:
+        width: 1/3
+        sections:
+          info2:
+            type: fields
+            fields:
+              info2:
+                label: info 2
+                type: textarea
+
+
+      # text area hslu
+      sidebar_right4:
+        width: 1/3
+        sections:
+          info3:
+            type: fields
+            fields:
+              info3:
+                label: info 3
+                type: textarea

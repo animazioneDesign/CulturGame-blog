@@ -1,0 +1,47 @@
+// @font-face {
+// 	font-family: "roobert-black"; 
+// 	font-weight black
+// 	src	url("../css/fonts/RoobertTRIAL-Heavy.otf") format("truetype")
+// 	 }
+
+// @font-face {
+// 	font-family: "roobert-light"; 
+// 	font-weight black
+// 	src	url("../css/fonts/RoobertTRIAL-Light.otf") format("truetype")
+// 	 }
+// @font-face {
+// 	font-family: "roobert-regular"; 
+// 	font-weight black
+// 	src	url("../css/fonts/RoobertTRIAL-Regular.otf") format("truetype")
+// 	 }
+
+// @font-face {
+// 	font-family: "roobert-SemiBold"; 
+// 	font-weight black
+// 	src	url("../css/fonts/RoobertTRIAL-SemiBold.otf") format("truetype")
+// 	 }
+
+html, body	
+	font-family: "roobert-regular"; 
+	color black
+	font-display auto /* Define how the browser behaves during download */
+	
+big-font = (52rem/18)
+sub-font = (34rem/18)
+medium-font = (26rem/18)
+small-font = (22rem/18)	// original is 12rem, but too small
+
+.big
+	font-size 10vw
+	// line-height 120%
+	
+	+media(tablet-v)
+		font-size big-font
+
+
+.medium
+	font-size medium-font
+
+.small
+	font-size small-font
+	line-height 150%

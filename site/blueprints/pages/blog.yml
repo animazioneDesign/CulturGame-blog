@@ -1,0 +1,40 @@
+title: Blog
+template: pages
+icon: 📚
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      drafts:
+        type: pages
+        headline: Bozze
+        status: draft
+        info: "{{ page.date.toDate('d.m.Y') }}"
+        template: article
+        empty: No articles yet
+        sortBy: date desc
+
+      unlisted:
+
+        headline: In Revisioine
+        status: unlisted
+        type: pages
+        info: "{{ page.date.toDate('d.m.Y') }}"
+        template: article
+        empty: No articles yet
+        sortBy: date desc
+
+
+
+  right:
+    width: 1/2
+    sections:
+      listed:
+        headline: Pubblicati
+        status: listed
+        type: pages
+        info: "{{ page.date.toDate('d.m.Y') }}"
+        template: article
+        empty: No articles yet
+        sortBy: date desc
