@@ -11,13 +11,14 @@
             <p >
             <?= $page->Testo()->kirbytext() ?>
             </p>
-    </div>
+    </div> <?php foreach($site->page('blog')->children()->listed()->flip() as $article):?>
+       
     <div class="container">
 
-    <?php foreach($site->page('blog')->children()->listed()->flip() as $article):?>
-        
+   
         <div  class="a">
-            <?= $article->author()->html() ?> 
+            <?= $article->author()->html()  ?> 
+        
         </div>
         
         <div class="b">
@@ -27,9 +28,14 @@
         </article>
         </div>
 
-        <div class="c"> c</div>
+        <div class="c"> 
+        <?php if($image = $article->image()): ?>
+        <img src="<?= $image->url() ?>"  width='400' height='auto'>
+        <?php endif ?>
+        </div>
 
-    <?php endforeach ?>
+ 
 </div>
 
+<?php endforeach ?>
 <?php snippet('footer') ?>

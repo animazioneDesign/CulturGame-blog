@@ -1,6 +1,5 @@
 
-body, html
-	overflow: hidden
+ 
 .banner
 	z-index -1
 	position fixed
@@ -17,22 +16,22 @@ h1
 	color black
 	font-size big-font
 	letter-spacing: .1rem;
-	font-family: "roobert-black"; 
+	font-family: "roobert-bold"; 
 h2
 	// padding:1rem 0 1rem 2rem
 	color black
 	font-size sub-font 
-	letter-spacing: .1rem;
-	font-family: "roobert-SemiBold"; 
+	letter-spacing: .07rem;
+	font-family: "roobert-bold"; 
 p
 	padding:1rem 0 1rem 2rem
-	line-height: 28px
-	letter-spacing: 0.07em;
-	// font-family: "roobert-Light"; 
+	line-height: 24px
+	letter-spacing: 0.05em;
+	font-family: "roobert-regular"; 
 	
 .container 
 	display: flex
-	flex-flow: row nowrap
+	flex-direction: column
 	justify-content: center
 	align-content: center
 	align-items: center
@@ -60,6 +59,17 @@ p
 	align-self: auto
 	min-width auto
 	min-height: auto
+
+
++media(tablet-v)
+	.container 
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-content: center
+		align-items: center
+	
+ 
 
 // .item item-2
 // 	order:2
