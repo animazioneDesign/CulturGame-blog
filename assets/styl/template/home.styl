@@ -1,50 +1,56 @@
 
- 
 .banner
 	z-index -4
- 
-h4
- 
-	font-family: "roobert-bold"; 
-	
-	color: red
-
- 
 .text
+	padding-top 5rem
+	 
 	padding-left 4rem
 	max-width: 70%
 .line
-	
+	margin-right: 2rem
+	margin-left: 2rem
+	padding-top 5rem
+	 
 	border-bottom: 2px   solid black
 .container
+ 
 	padding-left 2.2rem
-
+.containers
+	padding-top  30px
+	z-index -2
 a:link
 	padding:1rem 0 1rem 
 	line-height: 24px
 	letter-spacing: 0.05em;
 	font-family: "roobert-regular"; 
-	
 	color: black
+a:visited
+	color black
 
 h1
 	// padding:1rem 0 1rem 2rem
-	color black
-	font-size big-font
+	color white
+	font-size 50px
 	letter-spacing: .1rem;
 	font-family: "roobert-bold"; 
 h2
 	// padding:1rem 0 1rem 2rem
-	color black
+	color white
 	font-size sub-font 
 	letter-spacing: .07rem;
-	font-family: "roobert-regular"; 
+	font-family: "roobert-medium"; 
 h3
 	// padding:1rem 0 1rem 2rem
 	color black
 	font-size sub-font 
 	letter-spacing: .07rem;
-	font-family: "roobert-regular"; 
+	font-family: "roobert-medium"; 
+h5
+	padding:0.5rem  0 0 0
+	color black
+	font-size small-font
+	letter-spacing: .07rem;
+	font-family: "roobert-medium"; 
 p
 	font-size medium-font
 	padding:1rem 0 1rem 
@@ -57,8 +63,19 @@ p
 	line-height: 24px
 	letter-spacing: 0.05em;
 	font-family: "roobert-regular"; 
- 
+.c
+	// padding-left: 13rem
 	
+.main-title-container
+	display:flex
+	flex-direction: row
+	
+	padding-left: 4rem
+	padding-top 340px
+.main-title
+	flex 3 1 auto
+
+	order:1
 .container 
 	display: flex
 	flex-direction: row
@@ -70,14 +87,14 @@ p
 	flex-direction: row
 	justify-items: start left self-start	align-content left
 	gap: 10px;
-	margin 30px
+	margin 2rem
 	// column-gap: 20px;
 	//justify-items: start
 
 .container div.a
 
 	order:1
-	border 3px grey
+
 	// background-color: blue
 	// flex 3 1 10
 	align-self: auto
@@ -96,6 +113,8 @@ p
 	margin-bottom: 10px
 .container div.c
 	order:3
+	align-self: flex-start
+	
 	// background-color: yellow
 	// flex 3 4 auto
 	align: right
@@ -196,9 +215,7 @@ p
 // 		padding-bottom 2rem
 	
 
-	img
-		width: 90%;
-		height: auto
+
 		
 		
 // 	.images

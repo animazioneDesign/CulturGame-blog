@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'email' => 'sgmurgia@gmail.com',
+    'email' => 'sgtmurgia@gmail.com',
     'language' => 'en',
     'name' => '',
     'role' => 'admin'

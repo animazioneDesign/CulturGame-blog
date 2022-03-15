@@ -1,4 +1,4 @@
-Title: marzo 2022
+Title: Titolo Articolo
 
 ----
 
@@ -6,7 +6,7 @@ Text: Fringilla faucibus posuere bibendum amet nunc duis. Nec nisl tortor turpis
 
 ----
 
-Date: 2022-03-14 09:50
+Date: 2022-03-14
 
 ----
 
@@ -18,6 +18,4 @@ Tags: Exibit Design
 
 ----
 
-Foto:
-
-- primavera.png
+Foto: - primavera.png

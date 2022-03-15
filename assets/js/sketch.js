@@ -9,6 +9,11 @@ DSII2018 Lab @UNIRSM
 ----------------------------------
 <><><><><><><><><><><><><><><><><>
 */
+// let inconsolata;
+// function preload() {
+//   inconsolata = loadFont('assets/inconsolata.otf');
+// }
+
 
 var blockSize = 150;
 var countBorder = 3;
@@ -26,25 +31,33 @@ var clrs = colorSchemes[0];
 
 function setup() {
   
-  frameRate(0.3);
+  // frameRate(0.3);
   // createCanvas(windowWidth, windowHeight/2);
     
   let cnv = createCanvas(windowWidth, windowHeight/2);
   // Assigns a CSS selector class 'small'
   // to the canvas element.
   cnv.parent('banner');
- 
+  cnv.position(0,0);
+  cnv.style('z-index','-2')
   rectMode(CENTER);
   noStroke();
+  reDraw();
+
 
 }
 
 function draw() {
-  resetPatchwork();
-  background(255);
+  // resetPatchwork();
  
 
 
+
+
+ 
+}
+
+function reDraw(){
   for (var y = blockSize / 2; y < height; y+=blockSize) {
     for (var x = blockSize / 2; x < width; x+=blockSize) {
       queueNum = shuffleArray([ 0, 1, 2, ]);
@@ -59,8 +72,8 @@ function draw() {
   }
   paper();
 
-}
 
+}
 
 function chain(x, y, clrs) {
   rotate(radians(90 * Math.round(random(1, 5))));
@@ -106,6 +119,7 @@ function resetPatchwork(modeFn) {
 
 function mousePressed(){
   resetPatchwork();
+  reDraw()
 }
 
 function keyPressed(e){
@@ -139,4 +153,5 @@ function paper() {
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight/2);
+  reDraw()
 }

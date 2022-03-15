@@ -3,24 +3,29 @@
 
 <script src="assets/js/sketch.js"></script>
 <div id="banner">
-      <h4>CulturGame</h4>
-    </div>
-<div id='containers'class="containers"></div>
+        <div class="main-title-container">
+            <div class="main-title">
+                <h1>
+                    <?= $page->Titolo()->html() ?>
+                </h1>
+                <h2>
+                    <?= $page->Sottotitolo()->html() ?>
+                </h2>
+            </div>
+        </div>
+</div>
+<div class="containers"></div>
     <div class="content">   
         <div class="text">
-            <!-- <h1>
-                <?= $page->Titolo()->kirbytext() ?>
-            </h1>
-            <h2>
-                <?= $page->Sottotitolo()->kirbytext() ?>
-            </h2> -->
+        
             <p >
-            <?= $page->Testo()->kirbytext() ?>
+            <?= $page->Testo()->html() ?>
             </p>
-
+           
         </div> 
         <div class="line"></div>
-        <?php foreach($site->page('blog')->children()->listed()->flip() as $article):?>
+        <!-- ->flip() -->
+        <?php foreach($site->page('blog')->children()->listed() as $article):?>
        
         <div class="container">
 
@@ -31,20 +36,27 @@
         
         <div class="b">
         <article>
-        <h3><?= $article->title()->excerpt(600) ?></h3>
+        <h3><?= $article->title()  ?></h3> <h5><?= $article->Date('d.m.Y')->html()  ?></h5>
             <p><?= $article->text()->excerpt(600) ?></p>
             <a href="<?= $article->url() ?>">Continua a leggere</a>
+            
+          
+
+            <span>
+          <img src="<?= asset('assets/css/img/Arrow.svg')->url();  ?>" alt="Link to the full article page" width="20" height="10">
+        </span>
+
         </article>
         </div>
 
         <div class="c"> 
         <?php if($image = $article->image()): ?>
-        <img src="<?= $image->url() ?>"  width='300' height='auto'>
+        <img src="<?= $image->url() ?>"  width='400' height='auto'>
         <?php endif ?>
     </div>
-
- 
 </div>
-
 <?php endforeach ?>
-<?php snippet('footer') ?>
+
+<!-- <?php snippet('footer') ?> -->
+
+
