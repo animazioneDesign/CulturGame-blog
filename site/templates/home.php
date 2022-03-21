@@ -37,7 +37,7 @@
         <div class="b">
         <article>
         <h3><?= $article->title()  ?></h3> <h5><?= $article->Date('d.m.Y')->html()  ?></h5>
-            <p><?= $article->text()->excerpt(600) ?></p>
+            <p><?= $article->text()->excerpt(200) ?></p>
             <a href="<?= $article->url() ?>">Continua a leggere</a>
             
           
@@ -51,7 +51,7 @@
 
         <div class="c"> 
         <?php if($image = $article->image()): ?>
-        <img src="<?= $image->url() ?>"  width='400' height='auto'>
+        <img src="<?= $image->url() ?>"  width='350' height='auto'>
         <?php endif ?>
     </div>
 </div>

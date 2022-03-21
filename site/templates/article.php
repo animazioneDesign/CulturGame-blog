@@ -11,27 +11,39 @@
                 </span></a>
         </div>
                 <h1>
+                    <!-- titolo articolo -->
                     <?= $page->title()->html() ?>
                 </h1>
         
                 <h2>
+                    <!-- autori -->
                     <?= $page->author()->html()  ?> 
                 </h2>
+
+
             </div>
     </div>
 </div>
 <div class="main-article">
+
+<ul class="tags">
+<?= $page->tag()->html()  ?> 
+  </ul>
+
     <div class="article-a">
 
     </div> 
     <div class="article-b">
             <div class="titolo-aggiuntivo">
+                <!-- titolo articolo -->
                 <h9><?= $page->textsub() ?></h9>
             </div>
+            <!-- immagine copertina -->
             <?php if($image = $page->image()): ?>
                 <img src="<?= $image->url() ?>"  width='100%' height='auto'>
             <?php endif ?>
-            <p><?= $page->text() ?></p>
+            <!-- testo principale -->
+            <p><?= $page->text()->kirbytext() ?></p>
 
     </div> 
     <div class="article-c">

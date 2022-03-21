@@ -21,9 +21,20 @@ columns:
       textsub:
         type: text
         label: titolo aggiuntivo
+      # text:
+      #   type: textarea
+      #   size: large
       text:
-        type: textarea
-        size: large
+        type: blocks
+        fieldsets:
+          - heading
+          - text
+          - list
+          - image
+          - gallery
+          - video
+          - code
+          - markdown
 
 
 

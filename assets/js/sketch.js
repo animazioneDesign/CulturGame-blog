@@ -15,7 +15,7 @@ DSII2018 Lab @UNIRSM
 // }
 
 
-var blockSize = 150;
+var blockSize = 200;
 var countBorder = 3;
 var wdt = blockSize * countBorder;
 var hgt = 200;
@@ -30,7 +30,7 @@ var queueNum = [ 0, 1, 2, 3 ];
 var clrs = colorSchemes[0];
 
 function setup() {
-  
+  blockSize=windowWidth/10;
   // frameRate(0.3);
   // createCanvas(windowWidth, windowHeight/2);
     
