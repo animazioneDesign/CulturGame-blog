@@ -29,7 +29,7 @@
    
         <div  class="a">
         <?php if($image = $article->image()): ?>
-        <img src="<?= $image->url() ?>"  width='300' height='auto'>
+        <img src="<?= $image->url() ?>"  width='350' height='auto'>
         <?php endif ?>
 
             <!-- <?= $article->author()->html()?>  -->
@@ -49,7 +49,7 @@
             <img src="<?= asset('assets/css/img/Arrow.svg')->url();  ?>" alt="Link to the full article page" width="20" height="10">
         </span>
         </br>
-        <h5><?= $article->Date('d.m.Y')->html()?></h5>
+        <h5 class="home-date"><?= $article->Date('d.m.Y')->html()?></h5>
         </article>
         </div>
 
