@@ -13,7 +13,7 @@ use Michelf\SmartyPantsTypographer;
  * @package   Kirby Text
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
 class SmartyPants
@@ -115,13 +115,13 @@ class SmartyPants
     /**
      * Parses the given text
      *
-     * @param string $text
+     * @param string|null $text
      * @return string
      */
-    public function parse(string $text): string
+    public function parse(string $text = null): string
     {
         // prepare the text
-        $text = str_replace('&quot;', '"', $text);
+        $text = str_replace('&quot;', '"', $text ?? '');
 
         // parse the text
         return $this->parser->transform($text);

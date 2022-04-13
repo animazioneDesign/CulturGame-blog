@@ -2,8 +2,8 @@
 
 namespace Kirby\Http;
 
+use Kirby\Filesystem\Mime;
 use Kirby\Toolkit\Collection;
-use Kirby\Toolkit\Mime;
 use Kirby\Toolkit\Obj;
 use Kirby\Toolkit\Str;
 
@@ -15,7 +15,7 @@ use Kirby\Toolkit\Str;
  * @package   Kirby Http
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
 class Visitor
@@ -55,7 +55,7 @@ class Visitor
      */
     public function __construct(array $arguments = [])
     {
-        $this->ip($arguments['ip'] ?? getenv('REMOTE_ADDR'));
+        $this->ip($arguments['ip'] ?? $_SERVER['REMOTE_ADDR'] ?? '');
         $this->userAgent($arguments['userAgent'] ?? $_SERVER['HTTP_USER_AGENT'] ?? '');
         $this->acceptedLanguage($arguments['acceptedLanguage'] ?? $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
         $this->acceptedMimeType($arguments['acceptedMimeType'] ?? $_SERVER['HTTP_ACCEPT'] ?? '');

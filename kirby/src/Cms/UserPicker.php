@@ -12,7 +12,7 @@ use Kirby\Exception\InvalidArgumentException;
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
  */
 class UserPicker extends Picker
@@ -34,6 +34,7 @@ class UserPicker extends Picker
      * Search all users for the picker
      *
      * @return \Kirby\Cms\Users|null
+     * @throws \Kirby\Exception\InvalidArgumentException
      */
     public function items()
     {
@@ -60,7 +61,7 @@ class UserPicker extends Picker
         $users = $this->search($users);
 
         // sort
-        $users = $users->sortBy('username', 'asc');
+        $users = $users->sort('username', 'asc');
 
         // paginate
         return $this->paginate($users);

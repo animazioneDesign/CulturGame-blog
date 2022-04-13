@@ -3,6 +3,7 @@
 namespace Kirby\Toolkit;
 
 use Closure;
+use Kirby\Filesystem\F;
 use ReflectionFunction;
 
 /**
@@ -13,7 +14,7 @@ use ReflectionFunction;
  * @package   Kirby Toolkit
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
 class Controller
@@ -51,11 +52,11 @@ class Controller
 
     public static function load(string $file)
     {
-        if (file_exists($file) === false) {
+        if (is_file($file) === false) {
             return null;
         }
 
-        $function = require $file;
+        $function = F::load($file);
 
         if (is_a($function, 'Closure') === false) {
             return null;

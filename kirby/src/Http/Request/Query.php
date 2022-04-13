@@ -10,7 +10,7 @@ namespace Kirby\Http\Request;
  * @package   Kirby Http
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
 class Query
@@ -53,6 +53,26 @@ class Query
     public function data(): array
     {
         return $this->data;
+    }
+
+    /**
+     * Returns `true` if the request doesn't contain query variables
+     *
+     * @return bool
+     */
+    public function isEmpty(): bool
+    {
+        return empty($this->data) === true;
+    }
+
+    /**
+     * Returns `true` if the request contains query variables
+     *
+     * @return bool
+     */
+    public function isNotEmpty(): bool
+    {
+        return empty($this->data) === false;
     }
 
     /**

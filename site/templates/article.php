@@ -1,6 +1,6 @@
 <?php snippet('head') ?>
  
-<script src="../assets/js/sketch.js"></script>
+<!-- <script src="../assets/js/sketch.js"></script> -->
 <div id="banner">
     <div class="main-title-container-article">
         <div class="main-title-article">      

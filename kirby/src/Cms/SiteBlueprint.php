@@ -9,7 +9,7 @@ namespace Kirby\Cms;
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
  */
 class SiteBlueprint extends Blueprint
@@ -26,7 +26,7 @@ class SiteBlueprint extends Blueprint
 
         // normalize all available page options
         $this->props['options'] = $this->normalizeOptions(
-            $props['options'] ?? true,
+            $this->props['options'] ?? true,
             // defaults
             [
                 'changeTitle' => null,
@@ -41,7 +41,7 @@ class SiteBlueprint extends Blueprint
 
     /**
      * Returns the preview settings
-     * The preview setting controlls the "Open"
+     * The preview setting controls the "Open"
      * button in the panel and redirects it to a
      * different URL if necessary.
      *

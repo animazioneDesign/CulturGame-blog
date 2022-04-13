@@ -2,7 +2,7 @@
 
 namespace Kirby\Http;
 
-use Kirby\Toolkit\F;
+use Kirby\Filesystem\F;
 
 /**
  * The Header class provides methods
@@ -11,7 +11,7 @@ use Kirby\Toolkit\F;
  * @package   Kirby Http
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
 class Header
@@ -300,7 +300,7 @@ class Header
         $options = array_merge($defaults, $params);
 
         header('Pragma: public');
-        header('Expires: 0');
+        header('Cache-Control: no-cache, no-store, must-revalidate');
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $options['modified']) . ' GMT');
         header('Content-Disposition: attachment; filename="' . $options['name'] . '"');
         header('Content-Transfer-Encoding: binary');

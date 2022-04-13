@@ -3,6 +3,7 @@
 namespace Kirby\Toolkit;
 
 use Exception;
+use Kirby\Filesystem\F;
 use Throwable;
 
 /**
@@ -11,7 +12,7 @@ use Throwable;
  * @package   Kirby Toolkit
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
 class View
@@ -60,7 +61,7 @@ class View
      */
     public function exists(): bool
     {
-        return file_exists($this->file()) === true;
+        return is_file($this->file()) === true;
     }
 
     /**
@@ -94,13 +95,11 @@ class View
             throw new Exception($this->missingViewMessage());
         }
 
-        $exception = null;
-
         ob_start();
-        extract($this->data());
 
+        $exception = null;
         try {
-            require $this->file();
+            F::load($this->file(), null, $this->data());
         } catch (Throwable $e) {
             $exception = $e;
         }

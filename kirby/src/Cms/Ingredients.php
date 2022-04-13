@@ -11,7 +11,7 @@ namespace Kirby\Cms;
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
  */
 class Ingredients
@@ -35,7 +35,7 @@ class Ingredients
      * Magic getter for single ingredients
      *
      * @param string $method
-     * @param array $args
+     * @param array|null $args
      * @return mixed
      */
     public function __call(string $method, array $args = null)
@@ -70,7 +70,7 @@ class Ingredients
      *
      * @internal
      * @param array $ingredients
-     * @return self
+     * @return static
      */
     public static function bake(array $ingredients)
     {

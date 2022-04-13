@@ -43,9 +43,9 @@ function js() {
 }
 
 function serve() {
-  connect.server({ port: 3002, router: 'kirby/router.php' }, function() {
+  connect.server({ port: 3000, router: 'kirby/router.php' }, function() {
   	browsersync({
-  		proxy: '127.0.0.1:3002'
+  		proxy: '127.0.0.1:3000'
   	});
   });
 

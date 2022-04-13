@@ -13,7 +13,7 @@ use Kirby\Exception\InvalidArgumentException;
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
  */
 class PagePicker extends Picker
@@ -162,7 +162,7 @@ class PagePicker extends Picker
         }
 
         // filter protected pages
-        $items = $items->filterBy('isReadable', true);
+        $items = $items->filter('isReadable', true);
 
         // search
         $items = $this->search($items);
@@ -185,6 +185,7 @@ class PagePicker extends Picker
      * Search for pages by query string
      *
      * @return \Kirby\Cms\Pages
+     * @throws \Kirby\Exception\InvalidArgumentException
      */
     public function itemsForQuery()
     {

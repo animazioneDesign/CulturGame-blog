@@ -12,7 +12,7 @@ use Kirby\Exception\InvalidArgumentException;
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
  */
 class FilePicker extends Picker
@@ -34,6 +34,7 @@ class FilePicker extends Picker
      * Search all files for the picker
      *
      * @return \Kirby\Cms\Files|null
+     * @throws \Kirby\Exception\InvalidArgumentException
      */
     public function items()
     {

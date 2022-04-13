@@ -13,11 +13,16 @@ namespace Kirby\Cms;
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
  * @link      https://getkirby.com
- * @copyright Bastian Allgeier GmbH
+ * @copyright Bastian Allgeier
  * @license   https://getkirby.com/license
  */
 class Nest
 {
+    /**
+     * @param $data
+     * @param null $parent
+     * @return mixed
+     */
     public static function create($data, $parent = null)
     {
         if (is_scalar($data) === true) {

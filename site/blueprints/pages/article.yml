@@ -21,9 +21,9 @@ columns:
       textsub:
         type: text
         label: titolo aggiuntivo
-      # text:
-      #   type: textarea
-      #   size: large
+      text:
+        type: textarea
+        size: large
       text:
         type: blocks
         fieldsets:
@@ -35,7 +35,7 @@ columns:
           - video
           - code
           - markdown
-
+        
 
 
   sidebar:
@@ -47,7 +47,7 @@ columns:
           date:
             calendar: true
             type: date
- 
+          
           author:
             type: text
             search: true
