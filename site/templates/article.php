@@ -1,5 +1,5 @@
 <?php snippet('head') ?>
- 
+<?php snippet('blocks') ?>
 <!-- <script src="../assets/js/sketch.js"></script> -->
 <div id="banner">
     <div class="main-title-container-article">
@@ -44,7 +44,7 @@
             <?php endif ?>
             <!-- testo principale -->
             <p><?= $page->text()->kirbytext() ?></p>
-
+            </p>   <?= $block->text() ?></p>
     </div> 
     <div class="article-c">
     

@@ -1,4 +1,5 @@
 <?php snippet('head') ?>
+ 
 
 
  
@@ -29,7 +30,8 @@
    
         <div  class="a">
         <?php if($image = $article->image()): ?>
-        <img src="<?= $image->url() ?>"  width='300' height='auto'>
+            
+        <img class="image-home" src="<?= $image->url() ?>"  width='390' height='auto'>
         <?php endif ?>
 
             <!-- <?= $article->author()->html()?>  -->
@@ -38,7 +40,12 @@
         <div class="b">
         <article>
         
-        <h3 class="title-article"><?= $article->title()?></h3>
+        <h3 class="title-article">
+            
+      
+
+        <a href="<?= $article->url() ?>">  <?= $article->title()?></h3></a>
+
             <p><?= $article->text()->excerpt(350) ?></p>
             <a href="<?= $article->url() ?>">Continua a leggere</a>
             

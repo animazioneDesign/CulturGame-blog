@@ -6,7 +6,7 @@ Textsub: Lezione sul fitoplancton
 
 ----
 
-Text: [{"content":{"text":"<p>Antonella Lugli\u00e8 tiene una lezione introduttiva (online, piattaforma Teams) sul fitoplancton\nOltre al gruppo di ricerca UNISS partecipano Red Raion (Sonia Merlo) e ETT (Anna Gianvincenzo).\nI contenuti della presentazione, registrati sono disponibili per l\u2019intero gruppo di lavoro, e verranno presto integrato da materiali aggiuntivi di approfondimento.\n\nSempre il 7 aprile, il DADU pubblica il bando per un assegno di ricerca annuale rinnovabile: Strumenti, metodi e strategie del design per la promozione culturale, a supporto del progetto CULTURGAME<\/p>"},"id":"69319227-821c-4b3a-9b4a-a5b74308c9ed","isHidden":false,"type":"text"}]
+Text: [{"content":{"text":"<p>Lezione sul fito<\/p>"},"id":"64945cea-b93d-4f36-bb38-d56b3fdc149c","isHidden":false,"type":"text"}]
 
 ----
 
