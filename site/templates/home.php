@@ -29,7 +29,7 @@
    
         <div  class="a">
         <?php if($image = $article->image()): ?>
-        <img src="<?= $image->url() ?>"  width='350' height='auto'>
+        <img src="<?= $image->url() ?>"  width='300' height='auto'>
         <?php endif ?>
 
             <!-- <?= $article->author()->html()?>  -->
