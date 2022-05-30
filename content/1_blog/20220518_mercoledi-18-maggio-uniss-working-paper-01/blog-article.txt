@@ -1,0 +1,27 @@
+Title: UNISS working paper_01
+
+----
+
+Subheading: 
+
+----
+
+Cover: 
+
+----
+
+Text: [{"content":{"text":"<p>Presentazione del primo <em>working paper<\/em> a cura del laboratorio animazionedesign UNISS.<\/p><p>Il documento descrive gli scenari, le stategie e il concept del progetto di esperienza ludica ON-SITE.<\/p><p><\/p>"},"id":"162455d9-c5f1-4aa5-9c0c-4195d765a33d","isHidden":false,"type":"text"},{"content":{"url":"","caption":""},"id":"f5da1da9-c265-4045-aaa5-c583322cdd4f","isHidden":false,"type":"video"}]
+
+----
+
+Date: 2022-05-18
+
+----
+
+Author:
+
+- tDwnHSid
+
+----
+
+Tags: 

@@ -1,0 +1,49 @@
+title: Blog Article
+num: date
+icon: 📖
+
+status:
+  draft:
+    label: Bozza
+    text: Questo articolo verrà salvato in modalità bozza.
+  unlisted:
+    label: Revisione
+    text: Questo articolo verrà salvato nella sezione "revisione"
+  listed:
+    label: Pubbica
+    text: Questo articolo verrà pubblicato e inserito nel blog
+
+columns:
+  - width: 2/3
+    fields:
+      subheading:
+        type: text
+      cover:
+        type: files
+        max: 1
+        uploads:
+          template: blog-article-image
+      text:
+        type: blocks
+        uploads:
+          template: blog-article-image
+
+  - width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          date:
+            type: date
+            time: false
+            display: "DD.MM.YYYY"
+            default: now
+          author:
+            type: users
+          tags:
+            type: tags
+            options: query
+            query: page.siblings.pluck("tags", ",", true)
+      images:
+        type: files
+        template: blog-article-image

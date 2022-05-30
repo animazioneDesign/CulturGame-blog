@@ -1,0 +1,29 @@
+Title: Riunione plenaria coordinamento
+
+----
+
+Subheading: 
+
+----
+
+Cover:
+
+- schermata-2022-05-27-alle-12.38.06.png
+
+----
+
+Text: [{"content":{"text":"<p>La riunione, cui partecipano tutti ipartner di progetto,\u00a0 si articola in due momenti.<\/p><p>Il primo, a cura dell\u2019unit\u00e0 UNIMIB, relativa alle formule da adottare per l\u2019assesment dei risultati nella varie fasi di progetto.<\/p><p>Il secondo, a cura dell\u2019unit\u00e0 UNISS-animazionedesign, in cui viene presentato ai partner il modello per la comunicazione e il raggiungimento del task di progetto 7.<\/p><p>per UNISS partecipano Nicol\u00f2 Ceccarelli, Nada Beretic e Daniele Murgia.<\/p><p><\/p>"},"id":"4dd6d020-2f5b-44cb-a1a5-c9073129b78f","isHidden":false,"type":"text"}]
+
+----
+
+Date: 2022-05-27
+
+----
+
+Author:
+
+- 35lvxxlS
+
+----
+
+Tags: 

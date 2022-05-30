@@ -1,0 +1,27 @@
+Title: Riunione plenaria
+
+----
+
+Subheading: 
+
+----
+
+Cover: 
+
+----
+
+Text: [{"content":{"text":"<p>Anna Gianvincenzo (ETT) presenta il progetto CulturGame, la data ufficiale di inizio e le dinamiche operative.<\/p>"},"id":"a16e0e80-af74-490d-b17d-469107256d81","isHidden":false,"type":"text"}]
+
+----
+
+Date: 2021-12-07
+
+----
+
+Author:
+
+- 35lvxxlS
+
+----
+
+Tags: 
