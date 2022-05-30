@@ -8,7 +8,7 @@ This repo contains the whole <[culturGame-blog](https://animazionedesign.it/cult
 
 - Local development server running PHP 7.4+ (e.g. Apache, nginx, MAMP).
 
-Webiste structure
+# Webiste structure
 /assets
 JS, CSS, Stylus files all separated
 
