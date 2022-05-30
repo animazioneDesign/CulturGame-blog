@@ -116,6 +116,8 @@ Clone the repo into an empty folder
 ```
 git clone https://github.com/animazioneDesign/CulturGame-blog.git
 ```
+## Run the local website
+php -S localhost:8004 kirby/router.php
 
 ## Documentation
 
