@@ -1,40 +1,77 @@
 title: Blog
-template: pages
-icon: 📚
+icon: 📖
 
-columns:
-  left:
-    width: 1/2
-    sections:
-      drafts:
-        type: pages
-        headline: Bozze
-        status: draft
-        info: "{{ page.date.toDate('d.m.Y') }}"
-        template: article
-        empty: No articles yet
-        sortBy: date desc
+options:
+  title: false
+  duplicate: false
+  status: false
+  url: false
+  delete: false
 
-      unlisted:
+tabs:
 
-        headline: In Revisioine
-        status: unlisted
-        type: pages
-        info: "{{ page.date.toDate('d.m.Y') }}"
-        template: article
-        empty: No articles yet
-        sortBy: date desc
+  articoli:
+    
 
+    columns:
 
-
-  right:
-    width: 1/2
-    sections:
-      listed:
-        headline: Pubblicati
-        status: listed
-        type: pages
-        info: "{{ page.date.toDate('d.m.Y') }}"
-        template: article
-        empty: No articles yet
-        sortBy: date desc
+      - width: 1/3
+        sections:
+          drafts:
+            extends: sections/blog/articles
+            headline: Bozza
+            info: false
+            status: draft
+          unlisted:
+            extends: sections/blog/articles
+            headline: In revisione
+            info: false
+            status: unlisted
+      - width: 2/3
+        sections:
+          listed:
+            extends: sections/blog/articles
+            headline: Pubblicati
+            status: listed
+            layout: cards
+            size: small
+            image:
+              ratio: 2/1
+              cover: true
+       
+  opzioni:
+    columns:
+      - width: 1/2
+        fields:
+          titolo:
+            type: text
+            icon: title
+          sottotitolo:
+            type: text
+            icon: title
+          Testo:
+            label: Testo introduttivo
+            type: textarea  
+      - width: 1/2
+        fields:
+          limit:
+            label: Articoli per pagina
+            type: number
+            width: 1/2
+            placeholder: 6
+          dateFormat:
+            label: Formato data
+            type: text
+            width: 1/2
+            icon: calendar
+            placeholder: d M, Y
+          twitter:
+            label: Twitter 
+            type: text
+            icon: twitter
+            width: 1/2
+          instagram:
+            label: Instagram 
+            type: text
+            icon: instagram
+            width: 1/2
