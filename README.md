@@ -1,5 +1,5 @@
 # CulturGame Blog
-This repo contains the whole [culturGame-blog]<culturGame-blog> website.
+This repo contains the whole [culturGame-blog](culturGame-blog) website.
 
 # Requirements
 Local development server running PHP 7.4+ (e.g. Apache, nginx, MAMP).
