@@ -14,7 +14,7 @@ This repo contains the whole <[culturGame-blog](https://animazionedesign.it/cult
 Clone the repo into an empty folder
 
 ```
-git clone [git@github.com:getkirby/getkirby.com.git](https://github.com/animazioneDesign/CulturGame-blog.git)
+git clone https://github.com/animazioneDesign/CulturGame-blog.git
 ```
 
 ## Metadata for search engines and social media
