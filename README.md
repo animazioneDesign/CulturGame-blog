@@ -90,6 +90,14 @@ Clone the repo into an empty folder
 ```
 git clone https://github.com/animazioneDesign/CulturGame-blog.git
 ```
+
+**Please check if the invisible .htaccess file has been
+copied to your server correctly**
+
+## Run the local website
+```
+php -S localhost:8000 kirby/router.php
+```
 # Documentation
 https://getkirby.com/docs
 
