@@ -117,9 +117,33 @@ Clone the repo into an empty folder
 git clone https://github.com/animazioneDesign/CulturGame-blog.git
 ```
 
-## Metadata for search engines and social media
+## Documentation
 
-See [`site/plugins/meta/README.md`](/site/plugins/meta/README.md) for further information.
+<https://getkirby.com/docs>
+
+## Issues
+
+If you have a Github account, please report issues
+directly on Github: <https://github.com/getkirby/kirby/issues>
+
+Otherwise you can use Kirby's forum: https://forum.getkirby.com
+or send us an email: <support@getkirby.com>
+
+## Ideas & Feature Requests
+
+If you have ideas for new features, please submit a ticket in our ideas repository:
+<https://github.com/getkirby/kirby/ideas>
+
+## Support
+
+<https://getkirby.com/support>
+
+## Copyright
+
+© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
+<https://getkirby.com>
+
+
 
 
 
