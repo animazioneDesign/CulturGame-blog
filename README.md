@@ -87,9 +87,9 @@ All the other folders in the /site are not necessary to know about. Just for adv
 
 # Installation and setup
 Clone the repo into an empty folder
-
+```
 git clone https://github.com/animazioneDesign/CulturGame-blog.git
-
+```
 # Documentation
 https://getkirby.com/docs
 
